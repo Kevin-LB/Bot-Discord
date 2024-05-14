@@ -40,6 +40,5 @@ async def message(ctx, agenda_message):
   for emoji in ["✅", "❌"]:
     await message.add_reaction(emoji)
 
-token = 'MTIzOTE4NTg5ODY1NTA1NTg5Mg.GOysL-.r5P8PJqpyIZ3jy20C0z9bL6qyD2FG51WsSGpZ4'
-token = os.getenv('DISCORD_TOKEN', token)
+token = '...'
 bot.run(token)
