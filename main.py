@@ -9,7 +9,6 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-
 @bot.command()
 async def agenda(ctx):
   today = datetime.utcnow() + timedelta(hours=2)
@@ -33,7 +32,6 @@ async def agenda(ctx):
     await ctx.send(role_mention.mention)
 
   await ctx.send(ctx.author.mention)
-
 
 @bot.command()
 async def message(ctx, agenda_message):
