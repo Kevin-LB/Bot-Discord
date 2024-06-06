@@ -9,5 +9,6 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 bot.load_extension('commands.agenda')
 bot.load_extension('commands.message')
+bot.load_extension('commands.kitkat')
 
 bot.run('votre_token_discord')
